@@ -1,0 +1,32 @@
+{
+    "name": "kk14569/flarum-hubui-y",
+    "description": "Add more transition animations to Flarum.",
+    "type": "flarum-extension",
+    "version": "v1.0.0",
+    "license": "GPL-3.0",
+    "require": {
+        "flarum/core": "^1.8.0"
+    },
+    "authors": [
+        {
+            "name": "14569",
+            "email": "3754688512@qq.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/kk14569/flarum-hubui-y/issues",
+        "source": "https://github.com/kk14569/flarum-hubui-y",
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "HubUi-Y",
+            "category": "theme",
+            "icon": {
+                "name": "fas fa-crop",
+                "backgroundColor": "#0076D4",
+                "color": "#fff"
+            }
+        }
+    }
+}
