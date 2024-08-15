@@ -1,0 +1,47 @@
+@keyframes show-1 {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes show-2 {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.AfruxWidgets-Widget-content, .NotificationGroup, .Post-body, .SettingsPage, .UserSecurityPage, .MasqueradeRoot, .TagTiles>li {
+    opacity: 0;
+    animation: show-2 500ms ease-out forwards 0s;
+}
+.DiscussionListItem {
+    box-shadow: unset;
+}
+@media @tablet-up {
+    .DiscussionListItem-content {
+        opacity: 0;
+        animation: show-2 500ms ease-out forwards 0s;
+    }
+    #header {
+        opacity: 0;
+        animation: show-1 500ms ease-out forwards 0s;
+    }
+    .Dropdown-menu {
+        opacity: 0;
+        animation: show-1 400ms forwards;
+    }
+}
+.Button {
+    transition: background-color 0.4s;
+}
+.Button:active, .Button.active, .open>.Button.Dropdown-toggle {
+    box-shadow: unset;
+}
