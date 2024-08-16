@@ -1,5 +1,13 @@
+@keyframes show-0 {
+    0% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 @keyframes show-1 {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(-20px);
     }
@@ -9,7 +17,7 @@
     }
 }
 @keyframes show-2 {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(20px);
     }
@@ -18,30 +26,38 @@
         transform: translateY(0);
     }
 }
-.AfruxWidgets-Widget-content, .NotificationGroup, .Post-body, .SettingsPage, .UserSecurityPage, .MasqueradeRoot, .TagTiles>li {
-    opacity: 0;
-    animation: show-2 500ms ease-out forwards 0s;
-}
-.DiscussionListItem {
-    box-shadow: unset;
-}
 @media @tablet-up {
-    .DiscussionListItem-content {
+    .AfruxWidgets-Widget-content,
+    .GroupList-title,
+    .GroupList-UserList,
+    .DiscussionListItem-content,
+    .MasqueradeRoot,
+    .NotificationGroup,
+    .Post-body,
+    .SettingsPage,
+    .TagTiles>li,
+    .UserSecurityPage {
         opacity: 0;
-        animation: show-2 500ms ease-out forwards 0s;
+        animation: show-2 .5s ease-out 0s forwards;
     }
     #header {
         opacity: 0;
-        animation: show-1 500ms ease-out forwards 0s;
+        animation: show-1 .6s ease-out 0s forwards;
     }
-    .Dropdown-menu {
+    li.item-nav {
         opacity: 0;
-        animation: show-1 400ms forwards;
+        animation: show-2 .4s ease-out 0s forwards;
+    }
+    .Dropdown-menu--right {
+        opacity: 0;
+        animation: show-1 .4s forwards;
     }
 }
 .Button {
-    transition: background-color 0.4s;
+    transition: background-color .4s;
 }
-.Button:active, .Button.active, .open>.Button.Dropdown-toggle {
+.Button.active,
+.Button:active,
+.open>.Button.Dropdown-toggle {
     box-shadow: unset;
 }
